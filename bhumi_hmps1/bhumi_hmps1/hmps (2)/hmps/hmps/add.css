@@ -1,0 +1,139 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #d4fc79, #96e6a1); /* Green gradient */
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+
+.main-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  width: 100vh;
+  max-width: 580px;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #2d3748;
+  text-align: center;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #28a745;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+#addServiceForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+}
+
+input, select {
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #f1f5f9;
+  transition: 0.3s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.2);
+  background-color: #fff;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='currentColor' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.23 8.27a.75.75 0 01.02-1.06z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 18px;
+}
+
+#Add {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  margin-top: 10px;
+}
+
+#Add:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+#Add:active {
+  transform: scale(0.97);
+}
+
+a {
+  display: inline-block;
+  color: #4a5568;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1a202c;
+}
+
+@media (max-width: 600px) {
+  .main-card {
+    padding: 24px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
